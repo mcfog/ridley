@@ -1,0 +1,23 @@
+{
+  "name": "ridley",
+  "version": "0.1.0",
+  "description": "a simple idl",
+  "main": "index.js",
+  "bin": "./bin/ridley",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/mcfog/ridley"
+  },
+  "author": "McFog <mcfogw@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "jison": "^0.4.15"
+  }
+}
