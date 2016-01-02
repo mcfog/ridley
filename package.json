@@ -1,6 +1,6 @@
 {
   "name": "ridley",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a simple idl",
   "main": "index.js",
   "bin": "./bin/ridley",
@@ -15,7 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "coffee-script": "^1.10.0",
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "ejs": "^2.3.4"
   },
   "devDependencies": {
     "jison": "^0.4.15"

@@ -58,6 +58,7 @@ module.exports = class Ridley
   @Enum: class Enum extends Defination
     constructor: (@_define)->
       @name = @_define.id
+      @entry = @_define.reverse
 
   @Struct: class Struct extends Defination
     constructor: (@_define)->
@@ -130,6 +131,7 @@ module.exports = class Ridley
           name: field.id
           type: Type.cast field.type, ridley
           optional: !!field.optional
+          comment: field.comment
 
         field.id
 
@@ -141,6 +143,7 @@ module.exports = class Ridley
       paramMap = {}
       map[method.id] =
         name: method.id
+        comment: method.comment
         param: new Fields ridley, method.params
 
       if method.ret isnt 'void'
